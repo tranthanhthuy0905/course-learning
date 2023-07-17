@@ -1,0 +1,22 @@
+1. Sharing errors met: 
+    - Cannot read properties of null (reading 'useRef'):
+        * Using useRef somewhere incorrectly
+        * Issue with the version of React or other dependencies: ```npm install react@latest react-router-dom@latest```
+
+2. Hook learning:
+    - useContext: Provide context - contains all of the contextual var
+    - useState: Provide state - a variable stands for the state of component and changable
+    - useReduce: Provide Reducer - similar to Redux to handle page navigation problem but for simple and insequent navigation
+    - useEffect: Provide Effect - handle actions within the first render (callback var = []) or while rerendering whenever callback var change value
+    - useRef:
+
+3. Redux:
+    - 
+
+4. JSX / React v6 @latest
+    - Different syntax
+
+5. How to creat Element in React:
+    - import {createElement} from "react"; => createElement("div", {className: "abc"}, "Daily", createElement("h1", {}, "Another element"));
+    - If add element inside parents via for-loop:
+        * Create an empty arr [], for { arr.push(JSX)} , return <div>{arr}</div>
