@@ -11,21 +11,17 @@
 	font-size: 14px;
 	font-family: "Montserrat";
 	margin: 0;
-	padding: 0;
+	padding: 30px 3% 0;
 	line-height: 1.5;
-	position: relative;
-	width: 100vw;
 	height: 100vh;
+    display: flex;
 }
 
 .box {
 	width: auto;
-	height: 55%;
+	height: 60%;
 	background-color: var(--dark-blue);
 	border-radius: 10px;
-	position: absolute;
-	top: 7%;
-	transform: translate(5%, -5%);
 	overflow: scroll;
 }
 
@@ -73,7 +69,6 @@
 
 .schedule {
 	max-width: 30%;
-	left: 1%;
 }
 
 .duotone-circle {
@@ -104,8 +99,8 @@
  *********/
 
 .deadline {
-	max-width: 45%;
-	left: 33%;
+	max-width: 50%;
+    margin: 0 2%;
 }
 
 .deadline-detail {
@@ -141,6 +136,9 @@
  ------------------------ Course ---------------------------
  *********/
 
+ .courses {
+    max-width: 20%;
+ }
 
 /*********
  ------------------------ Goal ---------------------------
