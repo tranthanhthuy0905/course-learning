@@ -1,0 +1,105 @@
+.home-page {
+    background-color: rgb(199, 255, 255);
+    font-size: 14px;
+    font-family: "Montserrat";
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    position: relative;
+}
+
+/* ------------------------
+Schedule 
+---------------------------*/
+.schedule {
+    width: auto;
+    max-width: 25%;
+    background-color: rgba(0, 128, 128, 0.641);
+    border-radius: 10px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    transform: translate(-5%, -5%);
+    /* position: relative;
+    left: 20px;
+    top: 20px; 
+    padding: 10px 20px 20px; */
+}
+
+.schedule p {
+    margin: 0;
+}
+
+.schedule > p {
+    background-color: rgba(176, 255, 255, 0.641);
+    margin: 0;
+    height: 30px;
+    padding: 10px 0;
+    /* font-family: 'Caveat';
+    font-style: italic; */
+    /* font-weight: bold;  */
+    font-size: 23px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.schedule-detail {
+    display: flex;
+    gap: 40px;
+    padding: 5px 0;
+    margin: 10px 20px;
+}
+/* .schedule-timeline {
+    min-height: calc(100%/3);
+} */
+.duotone-circle {
+    font-size: 10px;
+    color: rgb(20, 213, 213);
+    margin: 6px 15px 0 0;
+    align-self: auto;
+}
+
+.schedule-dash {
+    border-left: 1px dashed rgb(0, 106, 106);
+    width: 2px;
+    height: 25px
+}
+.schedule-activities {
+    display: flex;
+}
+.schedule-activities span {
+    text-align: left;
+}
+
+/* ------------------------
+Deadline 
+---------------------------*/
+
+/* ------------------------
+Course 
+---------------------------*/
+
+
+/* ------------------------
+Goal 
+---------------------------*/
+.goal {
+    display: flex;
+    align-items: center;
+  }
+
+.goal-arrow {
+    border-top: 1px solid #000;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.milestone-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.milestone-item {
+    margin-bottom: 10px;
+}
