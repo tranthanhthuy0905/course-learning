@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect, useState, useRef, createElement } from "react";
 import "./Home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircle } from "@fortawesome/free-solid-svg-icons";
+import { faCircle, faCheck } from "@fortawesome/free-solid-svg-icons";
 
 // Components
 import Navbar from "../../components/navbar/navbar";
@@ -32,9 +32,22 @@ function Home() {
 
   const taskDone = (done) => {
     if (done) {
-      return "rgb(0, 106, 106)";
+      return (
+        <FontAwesomeIcon
+          icon={faCircle}
+          className="duotone-circle"
+          style={{ color: "rgb(20, 213, 213)", fontSize: "10px" }}
+        />
+      );
+      // return "rgb(0, 106, 106)";
     } else {
-      return "rgb(20, 213, 213)";
+      return (
+        <FontAwesomeIcon
+          icon={faCheck}
+          className="duotone-circle"
+          style={{ color: "rgb(0, 106, 106)", fontSize: "15px" }}
+        />
+      );
     }
   };
 
@@ -43,30 +56,57 @@ function Home() {
       return (
         <div className={className[0]}>
           {title}
-          <div className={className[1] + " box-detail"}>{displayItem(items)}</div>
+          <div className={className[1] + " box-detail"}>
+            {displayItem(items)}
+          </div>
         </div>
       );
     }
   };
 
   const displaySchedule = (res) => {
-    return res.map((data) => (
-      <div className="box-item">
-        <div className="schedule-timeline">
-          <p>{data.start_time}</p>
-          <div className="schedule-dash"></div>
-          <p>{data.end_time}</p>
-        </div>
-        <div className="schedule-activities">
+    const checkDone = (done) => {
+      if (done) {
+        return [
+          {
+            textDecoration: "line-through",
+            backgroundColor: "rgba(0, 128, 128, 0.5)", 
+          },
+          <FontAwesomeIcon
+            icon={faCheck}
+            className="duotone-circle"
+            style={{ color: "rgb(0, 106, 106)", fontSize: "15px" }}
+          />,
+        ];
+      } else {
+        return [
+          {},
           <FontAwesomeIcon
             icon={faCircle}
             className="duotone-circle"
-            style={{ color: taskDone(data.done) }}
-          />
-          <span>{data.activity}</span>
+            style={{ color: "rgb(20, 213, 213)", fontSize: "10px" }}
+          />,
+        ];
+      }
+    };
+
+    return res.map((data) => {
+      const [itemStyle, icon] = checkDone(data.done);
+
+      return (
+        <div className="box-item" style={itemStyle}>
+          <div className="schedule-timeline">
+            <p>{data.start_time}</p>
+            <div className="schedule-dash"></div>
+            <p>{data.end_time}</p>
+          </div>
+          <div className="schedule-activities">
+            {icon}
+            <span>{data.activity}</span>
+          </div>
         </div>
-      </div>
-    ));
+      );
+    });
   };
 
   const displayDeadline = (res) => {

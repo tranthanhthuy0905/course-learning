@@ -58,11 +58,12 @@
 
 .box-item {
     display: flex;
-    gap: 40px;
-    padding: 5px 0 10px;
-    margin: 15px 20px;
+    gap: 30px;
+    /* padding: 5px 0 10px; */
+    padding: 15px 20px;
     overflow: scroll;
     border-bottom: 1px dashed var(--home-background);
+    /* text-decoration: line-through; */
 }
 
 /* ------------------------
@@ -74,7 +75,7 @@ Schedule
 }
 
 .duotone-circle {
-    font-size: 10px;
+    /* font-size: 10px; */
     margin: 6px 15px 0 0;
     align-self: auto;
 }
