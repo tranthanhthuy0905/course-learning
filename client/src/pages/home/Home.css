@@ -1,67 +1,70 @@
 :root {
-    --home-background: rgb(199, 255, 255);
-    --dark-blue: rgba(0, 128, 128, 0.641);
-    --title-blue: rgba(176, 255, 255, 0.641);
-    --circle-dark-blue: rgb(0, 106, 106);
-    --border: 3px solid var(--dark-blue);
-  }
+	--home-background: rgb(199, 255, 255);
+	--dark-blue: rgba(0, 128, 128, 0.641);
+	--title-blue: rgba(176, 255, 255, 0.641);
+	--circle-dark-blue: rgb(0, 106, 106);
+	--border: 3px solid var(--dark-blue);
+}
 
 .home-page {
-    background-color: var(--home-background);
-    font-size: 14px;
-    font-family: "Montserrat";
-    margin: 0;
-    padding: 0;
-    line-height: 1.5;
-    position: relative;
-    width: 100vw;
-    height: 100vh;
+	background-color: var(--home-background);
+	font-size: 14px;
+	font-family: "Montserrat";
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+	position: relative;
+	width: 100vw;
+	height: 100vh;
 }
 
 .box {
-    width: auto;
-    height: 55%;
-    background-color: var(--dark-blue);
-    border-radius: 10px;
-    position: absolute;
-    top: 7%;
-    transform: translate(5%, -5%);
-    overflow: scroll;
+	width: auto;
+	height: 55%;
+	background-color: var(--dark-blue);
+	border-radius: 10px;
+	position: absolute;
+	top: 7%;
+	transform: translate(5%, -5%);
+	overflow: scroll;
 }
+
 .box p {
-    margin: 0;
+	margin: 0;
 }
+
 .box > p {
-    background-color: var(--title-blue);
-    position: sticky;
-    top: 0;
-    margin: 0;
-    height: 30px;
-    padding: 10px 0;
+	background-color: var(--title-blue);
+	position: sticky;
+	top: 0;
+	margin: 0;
+	height: 30px;
+	padding: 10px 0;
     /* font-family: 'Caveat';
     font-style: italic; */
     /* font-weight: bold;  */
-    font-size: 23px;
-    display: flex; 
-    align-items: center;
-    justify-content: center;
+	font-size: 23px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .box-detail {
-    display: flex;
-    overflow: scroll;
-    scroll-behavior: smooth;
+	display: flex;
+	overflow: scroll;
+	scroll-behavior: smooth;
     /* position: sticky;
     z-index: 2;
     top: 40px */
+	;
 }
 
 .box-item {
-    display: flex;
-    gap: 30px;
-    padding: 15px 20px;
-    overflow: scroll;
-    border-bottom: 1px dashed var(--home-background);
+	display: flex;
+	gap: 30px;
+	padding: 15px 20px;
+	overflow: scroll;
+	border-bottom: 1px dashed var(--home-background);
 }
 
 /*********
@@ -69,28 +72,31 @@
  *********/
 
 .schedule {
-    max-width: 30%;
-    left: 1%;
+	max-width: 30%;
+	left: 1%;
 }
 
 .duotone-circle {
-    margin: 6px 15px 0 0;
-    align-self: auto;
+	margin: 6px 15px 0 0;
+	align-self: auto;
 }
 
 .schedule-dash {
-    border-left: 1px dashed var(--circle-dark-blue);
-    width: 2px;
-    height: 25px
+	border-left: 1px dashed var(--circle-dark-blue);
+	width: 2px;
+	height: 25px;
 }
+
 .schedule-activities {
-    display: flex;
+	display: flex;
 }
+
 .schedule-activities span {
-    text-align: left;
+	text-align: left;
 }
+
 .schedule-detail {
-    flex-direction: column;
+	flex-direction: column;
 }
 
 /*********
@@ -98,32 +104,37 @@
  *********/
 
 .deadline {
-    max-width: 45%;
-    left: 33%;
+	max-width: 45%;
+	left: 33%;
 }
+
 .deadline-detail {
-    margin: 15px;
+	margin: 15px;
 }
+
 .deadline-item {
-    min-width: 50%;
-    background-color: var(--title-blue);
-    margin-right: 10px;
+	min-width: 50%;
+	background-color: var(--title-blue);
+	margin-right: 10px;
 }
+
 .deadline-item > p {
-    border-bottom: var(--border);
-    font-size: larger;
-    background-color: wheat;
-    padding: 5px;
+	border-bottom: var(--border);
+	font-size: larger;
+	background-color: wheat;
+	padding: 5px;
 }
+
 .deadline-activities {
-    background-color: white;
-    background-attachment:scroll;
-    width: 100%;
-    border-left: var(--border);
-    padding: 8px
+	background-color: white;
+	background-attachment: scroll;
+	width: 100%;
+	border-left: var(--border);
+	padding: 8px;
 }
+
 .deadline-duetime {
-    font-style: italic;
+	font-style: italic;
 }
 
 /*********
@@ -135,21 +146,21 @@
  ------------------------ Goal ---------------------------
  *********/
 .goal {
-    display: flex;
-    align-items: center;
-  }
+	display: flex;
+	align-items: center;
+}
 
 .goal-arrow {
-    border-top: 1px solid #000;
-    width: 50px;
-    margin-right: 10px;
+	border-top: 1px solid #000;
+	width: 50px;
+	margin-right: 10px;
 }
 
 .milestone-list {
-    list-style-type: none;
-    padding: 0;
+	list-style-type: none;
+	padding: 0;
 }
 
 .milestone-item {
-    margin-bottom: 10px;
+	margin-bottom: 10px;
 }
