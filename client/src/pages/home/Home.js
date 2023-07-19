@@ -52,7 +52,7 @@ function Home() {
 
   const displaySchedule = (res) => {
     return res.map((data) => (
-      <div className="schedule-detail">
+      <div className="box-detail">
         <div className="schedule-timeline">
           <p>{data.start_time}</p>
           <div className="schedule-dash"></div>
@@ -75,7 +75,7 @@ function Home() {
       <div className="deadline-detail">
         <p className="deadline-duedate">{data.due_date}</p>
         {data.deadline.map((dl) => (
-          <div className="deadline-item">
+          <div className="box-detail">
             <p className="deadline-duetime">{dl.due_time}</p>
             <div className="deadline-activities">
               {dl.activity}
@@ -91,17 +91,17 @@ function Home() {
     <div className="home-page">
       {checkDisplay(
         scheduleData,
-        "schedule",
+        "box schedule",
         <p>Daily Schedule</p>,
         displaySchedule
       )}
       {checkDisplay(
         deadlineData,
-        "deadline",
+        "box deadline",
         <p>Deadline is coming</p>,
         displayDeadline
       )}
-      <ul className="courses">
+      {/* <ul className="courses">
         {courseData.map((c) => (
           <li className="course-item" key={c.id}>
             Course {c.course}
@@ -117,8 +117,8 @@ function Home() {
             </li>
           ))}
         </ul>
-      </div>
-      <Navbar />
+      </div> */}
+      {/* <Navbar /> */}
     </div>
   );
 }

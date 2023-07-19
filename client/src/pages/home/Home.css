@@ -6,31 +6,23 @@
     padding: 0;
     line-height: 1.5;
     position: relative;
+    width: 100vw;
+    height: 100vh;
 }
 
-/* ------------------------
-Schedule 
----------------------------*/
-.schedule {
+.box {
     width: auto;
-    max-width: 25%;
     background-color: rgba(0, 128, 128, 0.641);
     border-radius: 10px;
     position: absolute;
-    top: 5%;
-    left: 5%;
-    transform: translate(-5%, -5%);
-    /* position: relative;
-    left: 20px;
-    top: 20px; 
-    padding: 10px 20px 20px; */
+    top: 7%;
+    transform: translate(5%, -5%);
+    overflow-wrap: break-word;
 }
-
-.schedule p {
+.box p {
     margin: 0;
 }
-
-.schedule > p {
+.box > p {
     background-color: rgba(176, 255, 255, 0.641);
     margin: 0;
     height: 30px;
@@ -43,16 +35,21 @@ Schedule
     align-items: center;
     justify-content: center;
 }
-
-.schedule-detail {
+.box-detail {
     display: flex;
     gap: 40px;
     padding: 5px 0;
     margin: 10px 20px;
 }
-/* .schedule-timeline {
-    min-height: calc(100%/3);
-} */
+
+/* ------------------------
+Schedule 
+---------------------------*/
+.schedule {
+    max-width: 30%;
+    left: 1%;
+}
+
 .duotone-circle {
     font-size: 10px;
     color: rgb(20, 213, 213);
@@ -75,7 +72,14 @@ Schedule
 /* ------------------------
 Deadline 
 ---------------------------*/
+.deadline {
+    max-width: 45%;
+    left: 33%;
+}
 
+.deadline-detail {
+    /* display: flex; */
+}
 /* ------------------------
 Course 
 ---------------------------*/
