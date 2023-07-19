@@ -59,23 +59,21 @@
 .box-item {
     display: flex;
     gap: 30px;
-    /* padding: 5px 0 10px; */
     padding: 15px 20px;
     overflow: scroll;
     border-bottom: 1px dashed var(--home-background);
-    /* text-decoration: line-through; */
 }
 
-/* ------------------------
-Schedule 
----------------------------*/
+/*********
+ ------------------------ Schedule ---------------------------
+ *********/
+
 .schedule {
     max-width: 30%;
     left: 1%;
 }
 
 .duotone-circle {
-    /* font-size: 10px; */
     margin: 6px 15px 0 0;
     align-self: auto;
 }
@@ -94,9 +92,11 @@ Schedule
 .schedule-detail {
     flex-direction: column;
 }
-/* ------------------------
-Deadline 
----------------------------*/
+
+/*********
+ ------------------------ Deadline ---------------------------
+ *********/
+
 .deadline {
     max-width: 45%;
     left: 33%;
@@ -125,14 +125,15 @@ Deadline
 .deadline-duetime {
     font-style: italic;
 }
-/* ------------------------
-Course 
----------------------------*/
+
+/*********
+ ------------------------ Course ---------------------------
+ *********/
 
 
-/* ------------------------
-Goal 
----------------------------*/
+/*********
+ ------------------------ Goal ---------------------------
+ *********/
 .goal {
     display: flex;
     align-items: center;

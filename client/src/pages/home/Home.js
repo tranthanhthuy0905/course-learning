@@ -140,14 +140,14 @@ function Home() {
         <p>Deadline is coming</p>,
         displayDeadline
       )}
-      {/* <ul className="courses">
+      <ul className="courses">
         {courseData.map((c) => (
           <li className="course-item" key={c.id}>
             Course {c.course}
           </li>
         ))}
       </ul>
-      <div className="goal">
+      {/* <div className="goal">
         <div className="goal-arrow"></div>
         <ul className="milestone-list">
           {goalData.map((g) => (
@@ -156,8 +156,8 @@ function Home() {
             </li>
           ))}
         </ul>
-      </div>
-      <Navbar /> */}
+      </div> */}
+      {/* <Navbar /> */}
     </div>
   );
 }
