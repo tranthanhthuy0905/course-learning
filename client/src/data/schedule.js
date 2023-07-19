@@ -17,4 +17,10 @@ export const scheduleD = [
     activity: "Running and doing exercise to make it very healthy and balance",
     done: false
   },
+  {
+    start_time: "21:00",
+    end_time: "22:00",
+    activity: "Running and doing exercise to make it very healthy and balance",
+    done: false
+  },
 ];

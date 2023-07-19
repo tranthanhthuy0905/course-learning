@@ -1,5 +1,13 @@
+:root {
+    --home-background: rgb(199, 255, 255);
+    --dark-blue: rgba(0, 128, 128, 0.641);
+    --title-blue: rgba(176, 255, 255, 0.641);
+    --circle-dark-blue: rgb(0, 106, 106);
+    --border: 3px solid var(--dark-blue);
+  }
+
 .home-page {
-    background-color: rgb(199, 255, 255);
+    background-color: var(--home-background);
     font-size: 14px;
     font-family: "Montserrat";
     margin: 0;
@@ -12,18 +20,19 @@
 
 .box {
     width: auto;
-    background-color: rgba(0, 128, 128, 0.641);
+    height: 55%;
+    background-color: var(--dark-blue);
     border-radius: 10px;
     position: absolute;
     top: 7%;
     transform: translate(5%, -5%);
-    overflow-wrap: break-word;
+    overflow: scroll;
 }
 .box p {
     margin: 0;
 }
 .box > p {
-    background-color: rgba(176, 255, 255, 0.641);
+    background-color: var(--title-blue);
     margin: 0;
     height: 30px;
     padding: 10px 0;
@@ -35,11 +44,20 @@
     align-items: center;
     justify-content: center;
 }
+
 .box-detail {
     display: flex;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+
+.box-item {
+    display: flex;
     gap: 40px;
-    padding: 5px 0;
-    margin: 10px 20px;
+    padding: 5px 0 10px;
+    margin: 15px 20px;
+    overflow: scroll;
+    border-bottom: 1px dashed var(--home-background);
 }
 
 /* ------------------------
@@ -52,13 +70,12 @@ Schedule
 
 .duotone-circle {
     font-size: 10px;
-    color: rgb(20, 213, 213);
     margin: 6px 15px 0 0;
     align-self: auto;
 }
 
 .schedule-dash {
-    border-left: 1px dashed rgb(0, 106, 106);
+    border-left: 1px dashed var(--circle-dark-blue);
     width: 2px;
     height: 25px
 }
@@ -68,7 +85,9 @@ Schedule
 .schedule-activities span {
     text-align: left;
 }
-
+.schedule-detail {
+    flex-direction: column;
+}
 /* ------------------------
 Deadline 
 ---------------------------*/
@@ -76,9 +95,29 @@ Deadline
     max-width: 45%;
     left: 33%;
 }
-
 .deadline-detail {
-    /* display: flex; */
+    margin: 15px;
+}
+.deadline-item {
+    min-width: 50%;
+    background-color: var(--title-blue);
+    margin-right: 10px;
+}
+.deadline-item > p {
+    border-bottom: var(--border);
+    font-size: larger;
+    background-color: wheat;
+    padding: 5px;
+}
+.deadline-activities {
+    background-color: white;
+    background-attachment:scroll;
+    width: 100%;
+    border-left: var(--border);
+    padding: 8px
+}
+.deadline-duetime {
+    font-style: italic;
 }
 /* ------------------------
 Course 
